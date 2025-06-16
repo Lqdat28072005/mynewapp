@@ -1,6 +1,6 @@
 import { StatusBar } from 'expo-status-bar';
 import { useState } from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet, Text, TextInput, View } from 'react-native';
 
 export default function App() {
   //string
@@ -19,8 +19,11 @@ export default function App() {
   return (
     <View style={styles.container}>
       <View>
-        <Text style ={styles.text}>test</Text>
-        <Text style ={styles.text}>{JSON.stringify(person)}</Text>
+        <Text style ={styles.text}>{name}</Text>
+        <TextInput style={{
+          borderColor:"Violet",
+          borderWidth:1
+        }}></TextInput>
       </View>
          <Text  style ={styles.text}>Xin chào các bạn 
             <Text style={styles.dat}>lequangdat</Text>
